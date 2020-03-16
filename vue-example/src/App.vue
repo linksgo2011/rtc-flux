@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Input />
+    <Board />
   </div>
 </template>
 
 <script>
-import Input from './components/Input.vue'
+import Board from './components/Board.vue'
 
 export default {
   name: 'App',
   components: {
-      Input: Input
+      Board: Board
   }
 }
 </script>
