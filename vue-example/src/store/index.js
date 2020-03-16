@@ -1,18 +1,21 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import RTSFlux from '../lib/index.js'
+import RTSFlux from '../../../lib/src/index.js'
+import {v4 as uuidv4} from 'uuid';
 
 Vue.use(Vuex)
 const rTSFluxInstant = new RTSFlux();
 
-
 export default new Vuex.Store({
     state: {
-        text: "Hello Vue!"
+        cards: []
     },
     mutations: {
-        updateText(state, payload) {
-            this.state.text = payload.text;
+        createCard(state, payload) {
+            this.state.cards.push({
+                content: payload.content,
+                id: uuidv4()
+            })
         }
     },
     actions: {},

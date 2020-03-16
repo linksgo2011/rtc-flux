@@ -1,5 +1,7 @@
 # vue-example
 
+A real-time collaborative polling tool as rtc-flux example.
+
 ## Project setup
 ```
 npm install
@@ -24,6 +26,3 @@ npm run test
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
