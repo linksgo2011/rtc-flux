@@ -1,0 +1,35 @@
+{
+  "name": "rtc-flux",
+  "version": "0.0.1",
+  "description": "Middleware for flux to implement real time communication",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "watch 'npm run build' ./src",
+    "test": "npm run build && ./node_modules/mocha/bin/mocha",
+    "deploy": "npm version patch --force && npm run build && npm publish"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "package",
+    "babel",
+    "webpack"
+  ],
+  "author": "Sahil Khosla",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "mocha": "^6.2.0",
+    "sinon": "^7.3.2",
+    "websocket": "^1.0.31"
+  }
+}
