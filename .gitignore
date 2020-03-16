@@ -106,3 +106,5 @@ dist
 # example
 ./vue-example/node_modules
 ./vue-example/dist
+
+.idea
