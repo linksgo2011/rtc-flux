@@ -6,3 +6,7 @@ Real time communication plugin for vuex/redux as middleware.
 - stomp mockserver
 - typescript
 - unit test
+
+## references
+
+- Websocket over stomp http://jmesnil.net/stomp-websocket/doc/
