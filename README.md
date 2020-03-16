@@ -6,6 +6,7 @@ Real time communication plugin for vuex/redux as middleware.
 - stomp mockserver
 - typescript
 - unit test
+- OT algorithm
 
 ## references
 
